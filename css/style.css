@@ -1,0 +1,124 @@
+/*-------products-------*/
+
+/*Menu*/
+
+.products{
+    width: 100%;
+    padding: 70px 0;
+
+}
+.products h1{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.products h1 span{
+    color: #d6111e;
+    margin-left: 15px;
+    font-family: mv boli;
+}
+.products h1 span::after{
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #d6111e;
+    display: block;
+    bottom: 15px;
+}
+.products .products_box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+.products .products_box .products_card{
+    width: 325px;
+    height: 480px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.products .products_box .products_card .products_image{
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+.products .products_box .products_card .products_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+.products .products_box .products_card .products_image:hover img{
+    transform: scale(1.1);
+}
+.products .products_box .products_card .small_card{
+    width: 45px;
+    height: 45px;
+    float: right;
+    position: relative;
+    top: -240px;
+    right: -8px;
+    opacity: 0;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+.products .products_box .products_card:hover .small_card{
+    position: relative;
+    top: -240px;
+    right: 20px;
+    opacity: 1;
+}
+.products .products_box .products_card .small_card i{
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    color: #000;
+    cursor: pointer;
+    text-shadow: 0 0 6px #000;
+    transition: 0.2s;
+}
+.products .products_box .products_card .small_card i:hover{
+    color: #d6111e;
+}
+.products .products_box .products_card .products_info p{
+    text-align: center;
+    margin-top: 8px;
+    line-height: 21px;
+}
+.products .products_box .products_card .products_info h3{
+    text-align: center;
+    margin-top: 10px;
+}
+.products .products_box .products_card .products_info .products_icon{
+    color: #d6111e;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+.products .products_box .products_card .products_info .products_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    padding: 8px 10px;
+    margin: 0 80px;
+    transition: 0.3s;
+}
+
+/*---------contact part---------*/
+
+.row h1 span{
+    color: #d6111e;
+    margin-left: 15px;
+    font-family: mv boli;
+}
